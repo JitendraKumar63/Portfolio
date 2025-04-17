@@ -1,0 +1,181 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f0f4f8; /* Light background color for contrast */
+}
+
+header {
+    background: #004d40; /* Teal */
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #00796b; /* Darker teal */
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #00796b 0%, #004d40 100%); /* Gradient background */
+    color: #fff;
+}
+
+.intro {
+    max-width: 50%;
+}
+
+.intro h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #ffeb3b; /* Yellow highlight */
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #ff5722; /* Bright Orange */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #e64a19; /* Darker orange */
+    transform: translateY(-2px);
+}
+
+.profile-image img {
+    max-width: 250px;
+    border-radius: 50%;
+    border: 5px solid #ffffff; /* White border */
+}
+
+/* About section */
+.about {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: #00796b; /* Teal */
+}
+
+/* Education and Skills sections */
+.education, .skills {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.education h1, .skills h1 {
+    font-size: 2.5rem;
+    color: #004d40; /* Darker teal */
+}
+
+.education ul, .skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education li, .skills li {
+    margin: 0.5rem 0;
+    padding: 10px;
+    border-left: 4px solid #ff5722; /* Left border color */
+    background: #e0f7fa; /* Light blue background */
+}
+
+/* Footer styles */
+footer {
+    background: #004d40; /* Teal */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    margin: 1rem 0;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-top: 20px;
+    }
+}
